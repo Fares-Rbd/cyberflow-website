@@ -17,87 +17,50 @@ const Pricing = () => {
           width="665px"
         />
 
-        {/* <div className="w-full">
-          <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
-            <span
-              onClick={() => setIsMonthly(true)}
-              className={`${
-                isMonthly
-                  ? "pointer-events-none text-primary"
-                  : "text-dark dark:text-white"
-              } mr-4 cursor-pointer text-base font-semibold`}
-            >
-              Monthly
-            </span>
-            <div
-              onClick={() => setIsMonthly(!isMonthly)}
-              className="flex cursor-pointer items-center"
-            >
-              <div className="relative">
-                <div className="h-5 w-14 rounded-full bg-[#1D2144] shadow-inner"></div>
-                <div
-                  className={`${
-                    isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary transition`}
-                >
-                  <span className="active h-4 w-4 rounded-full bg-white"></span>
-                </div>
-              </div>
-            </div>
-            <span
-              onClick={() => setIsMonthly(false)}
-              className={`${
-                isMonthly
-                  ? "text-dark dark:text-white"
-                  : "pointer-events-none text-primary"
-              } ml-4 cursor-pointer text-base font-semibold`}
-            >
-              Yearly
-            </span>
-          </div>
-        </div> */}
-
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="Monthly"
-            price={isMonthly ? "29" : "120"}
+            price="29"
             duration="month"
             subtitle="Get started with the basics. Access all courses, projects, and more—just pay as you go."
-            url="https://www.youtube.com"
+            url="https://whop.com/checkout/plan_EZRZTgBP9FYsG?d2c=true"
           >
             <OfferList text="All the courses" status="active" />
             <OfferList text="Ask me anything directly" status="active" />
             <OfferList text="Be part of the community" status="active" />
             <OfferList text="Regular updates on everything" status="active" />
-            <OfferList text="+300 Lessons (with quizzes and cheatsheets)" status="active" />
+            <OfferList
+              text="+300 Lessons (with quizzes and cheatsheets)"
+              status="active"
+            />
           </PricingBox>
           <PricingBox
             packageName="Yearly"
-            price={isMonthly ? "199" : "789"}
+            price="225"
             duration="year"
             subtitle="Commit for the long run and get a discount. Same access as monthly, but cheaper over time."
-            url="https://www.youtube.com"
+            url="https://whop.com/c/cyberflow/website-year"
           >
-            <OfferList text="Everything from the monthly plan" status="active" />
-            <OfferList text="It's cheaper if you commit for the year—trust me, it's worth it long-term!" status="active" />
-            {/* <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-           <OfferList text="Free Lifetime Updates" status="inactive" /> */}
+            <OfferList
+              text="Everything from the monthly plan"
+              status="active"
+            />
+            <OfferList
+              text="It's cheaper if you commit for the year—trust me, it's worth it long-term!"
+              status="active"
+            />
           </PricingBox>
           <PricingBox
             packageName="Lifetime"
-            price={isMonthly ? "399" : "999"}
+            price="399"
             duration="once"
             subtitle="Go all in for lifetime access to everything. No more payments, just pure learning."
-            url="https://www.youtube.com"
+            url="https://whop.com/c/cyberflow/pay-once"
           >
-            <OfferList text="Pay once, and you’re done! Lifetime access to all courses, no more payments." status="active" />
-            {/* <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" /> */}
+            <OfferList
+              text="Pay once, and you’re done! Lifetime access to all courses, no more payments."
+              status="active"
+            />
           </PricingBox>
         </div>
       </div>

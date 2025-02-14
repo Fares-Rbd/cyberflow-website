@@ -32,7 +32,7 @@ const Footer = () => {
                 </p>
                 <div className="mx-auto flex items-center">
                   <a
-                    href="/"
+                    href="https://x.com/CyberFlow10"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -54,7 +54,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="/"
+                    href="https://www.youtube.com/@CyberFlow10"
                     aria-label="social-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const Footer = () => {
             <p className="text-center text-base text-body-color dark:text-white">
               Copyright © 2025{" "}
               <a
-                href="https://www.youtube.com/@CyberFlow10"
+                href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
