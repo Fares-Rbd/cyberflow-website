@@ -23,8 +23,6 @@ const Video = () => {
           center
           mb="80px"
         />
-        
-
 
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -65,11 +63,11 @@ const Video = () => {
         onClose={() => setOpen(false)}
       />
       <button
-          className="flex w-auto mx-auto my-4 items-center justify-center rounded-sm bg-primary px-6 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
-          onClick={() => window.open('https://thatsthefinger.com', '_blank')}
-        >
-          🔥 Join Us Now!
-        </button>
+        className="mx-auto my-4 flex w-auto items-center justify-center rounded-sm bg-primary px-6 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+        onClick={() => window.open("https://thatsthefinger.com", "_blank")}
+      >
+        Join Us Now 🔥
+      </button>
       <div className="absolute bottom-0 left-0 right-0 z-[-1] h-full w-full bg-[url(/images/video/shape3.png)] bg-cover bg-center bg-no-repeat"></div>
     </section>
   );
